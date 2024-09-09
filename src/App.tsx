@@ -8,6 +8,7 @@ import { getContacts } from './services/indexedDbUtils';
 const App: React.FC = () => {
   const [contacts, setContacts] = useState<any[]>([]);
 
+
   useEffect(() => {
     const fetchContacts = async () => {
       const contactsList = await getContacts();
@@ -19,7 +20,7 @@ const App: React.FC = () => {
 
   return (
     <div>
-      <ContactPicker />
+      <ContactPicker setContactList={setContacts} />
       <ContactList contacts={contacts} />
     </div>
   );

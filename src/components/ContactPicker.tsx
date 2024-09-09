@@ -8,7 +8,8 @@ interface Contact {
   phone: string;
 }
 
-const ContactPicker: React.FC = () => {
+
+const ContactPicker = ({setContactList}:{setContactList:any}) => {
   const [contacts, setContacts] = useState<Contact[]>([]);
   const [error, setError] = useState<string | null>(null);
 
@@ -26,6 +27,7 @@ const ContactPicker: React.FC = () => {
         }));
 
         setContacts(formattedContacts);
+        setContactList(formattedContacts);
         setError(null);
       } catch (err) {
         console.error('Error selecting contacts:', err);
