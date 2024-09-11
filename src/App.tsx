@@ -1,3 +1,19 @@
+
+// src/App.tsx
+import React from 'react';
+import Flow from './components/Flow';
+
+const App: React.FC = () => {
+  return (
+    <div>
+      <h1>React Flow with XYFlow</h1>
+      <Flow />
+    </div>
+  );
+};
+
+export default App;
+=======
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
@@ -33,3 +49,4 @@ function App() {
 }
 
 export default App
+
