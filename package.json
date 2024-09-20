@@ -1,10 +1,31 @@
 {
 
+  "name": "splash-screen-project",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@emotion/react": "^11.13.3",
+    "@emotion/styled": "^11.13.0",
+    "@mui/icons-material": "^6.1.0",
+    "@mui/material": "^6.1.0",
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/jest": "^27.5.2",
+    "@types/node": "^16.18.108",
+    "@types/react": "^18.3.5",
+    "@types/react-dom": "^18.3.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-scripts": "5.0.1",
+    "typescript": "^4.9.5",
+
+
   "name": "contact-picker-app",
-=======
+
 
   "name": "my-react-flow-app",
-=======
+
 
   "name": "vite-project",
 
@@ -16,7 +37,7 @@
 
     "dev": "vite",
     "build": "tsc -b && vite build",
-=======
+
 
   "start": "vite",
     "dev": "vite",
@@ -34,7 +55,7 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.9.0",
-=======
+
     "@testing-library/react": "^16.0.1",
     "@xyflow/react": "^12.2.1",
     "react": "^18.3.1",
@@ -46,7 +67,7 @@
     "@testing-library/jest-dom": "^6.5.0",
     "@types/jest": "^29.5.12",
     "@types/mocha": "^10.0.7",
-=======
+
     "dev": "vite",
     "test": "jest",
     "build": "tsc -b && vite build",
@@ -87,14 +108,14 @@
     "typescript": "^5.5.3",
     "typescript-eslint": "^8.0.1",
     "vite": "^5.4.1"
-=======
+
 
     "eslint-plugin-react": "^7.35.0",
     "eslint-plugin-react-hooks": "^5.1.0-rc.0",
     "eslint-plugin-react-refresh": "^0.4.9",
     "globals": "^15.9.0",
     "vite": "^5.4.1"
-=======
+
     "eslint-plugin-react-hooks": "^5.1.0-rc.0",
     "eslint-plugin-react-refresh": "^0.4.9",
     "eslint-plugin-storybook": "^0.8.0",
@@ -111,7 +132,7 @@
   "eslintConfig": {
     "extends": [
       "plugin:storybook/recommended"
-=======
+
   "name": "my-indexeddb-app",
   "version": "0.1.0",
   "private": true,
@@ -123,18 +144,30 @@
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-scripts": "5.0.1",
+
     "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+
+    "eject": "react-scripts eject",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+
     "eject": "react-scripts eject"
+
   },
   "eslintConfig": {
     "extends": [
       "react-app",
+
+      "react-app/jest",
+      "plugin:storybook/recommended"
+
       "react-app/jest"
+
     ]
   },
   "browserslist": {
@@ -149,6 +182,28 @@
       "last 1 safari version"
 
     ]
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "@chromatic-com/storybook": "^2.0.2",
+    "@storybook/addon-essentials": "^8.3.0",
+    "@storybook/addon-interactions": "^8.3.0",
+    "@storybook/addon-links": "^8.3.0",
+    "@storybook/addon-mdx-gfm": "^8.3.0",
+    "@storybook/addon-onboarding": "^8.3.0",
+    "@storybook/blocks": "^8.3.0",
+    "@storybook/preset-create-react-app": "^8.3.0",
+    "@storybook/react": "^8.3.0",
+    "@storybook/react-webpack5": "^8.3.0",
+    "@storybook/test": "^8.3.0",
+    "eslint-plugin-storybook": "^0.8.0",
+    "prop-types": "^15.8.1",
+    "storybook": "^8.3.0",
+    "webpack": "^5.94.0"
+
+
+    ]
+
 
   }
 }
