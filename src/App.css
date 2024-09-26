@@ -1,5 +1,7 @@
 
 
+
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -21,6 +23,7 @@
 }
 
 @keyframes logo-spin {
+
 
 
 .App {
@@ -51,15 +54,21 @@
 
 .App-link {
 
+
+
+
   color: #3095f4;
 }
 
 @keyframes App-logo-spin {
 
+
+
   color: #61dafb;
 }
 
 @keyframes App-logo-spin {
+
 
 
 
@@ -71,6 +80,8 @@
     transform: rotate(360deg);
   }
 }
+
+
 
 
 
@@ -87,4 +98,5 @@
 .read-the-docs {
   color: #888;
 }
+
 
