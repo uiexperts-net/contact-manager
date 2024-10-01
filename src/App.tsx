@@ -1,5 +1,14 @@
 
-// src/App.tsx
+import React, { useState, useEffect } from 'react';
+import ContactPicker from './components/ContactPicker';
+import ContactList from './components/ContactList';
+import { getContacts } from './services/indexedDbUtils';
+
+const App: React.FC = () => {
+  const [contacts, setContacts] = useState<any[]>([]);
+=======
+
+
 import React from 'react';
 import { CssBaseline, Container } from '@mui/material';
 import NavbarWithLogo from './components/NavbarWithLogo';
@@ -15,7 +24,7 @@ const App: React.FC = () => {
     </Container>
 
 
-// src/App.tsx
+
 import React from 'react';
 import { Typography, Button, Box } from '@mui/material';
 import SplashScreen from './components/SplashScreen';
@@ -88,15 +97,26 @@ const App: React.FC = () => {
   const [phoneNumber, setPhoneNumber] = useState('');
   const [selectedContactId, setSelectedContactId] = useState<number | null>(null);
 
+
   useEffect(() => {
     const fetchContacts = async () => {
       const contactsList = await getContacts();
+
+      setContacts(contactsList);
+=======
       setContacts(contactsList as unknown as Contact[]);
+
     };
 
     fetchContacts();
   }, []);
 
+
+  return (
+    <div>
+      <ContactPicker />
+      <ContactList contacts={contacts} />
+=======
   const handleAddContact = async () => {
     if (name && phoneNumber) {
       await addContact({ name, phoneNumber });
@@ -172,13 +192,17 @@ const App: React.FC = () => {
         onDelete={handleDeleteContact} 
         onUpdate={handleUpdateContact} 
       />
+
     </div>
   );
 };
 
+
+export default App;
+=======
 export 
 
-// src/App.tsx
+
 import React from 'react';
 import Flow from './components/Flow';
 
@@ -231,6 +255,7 @@ function App() {
 }
 
 export default App
+
 
 
 
